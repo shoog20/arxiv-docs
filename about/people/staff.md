@@ -2,6 +2,7 @@
 
 - Amanda Bartley, arXiv Administrator
 - Shamsi Brinn, UX Lead
+- Charles Frankston, Technical Director
 - Christopher Cameron, Computational Social Scientist
 - Brian Caruso, Interim Head of Technology
 - Jim Entwood, Head of Content
