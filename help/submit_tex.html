@@ -1,0 +1,319 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- new favicon config and versions by realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://static.arxiv.org/static/base/0.16.9/images/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://static.arxiv.org/static/base/0.16.9/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://static.arxiv.org/static/base/0.16.9/images/icons/favicon-16x16.png">
+<link rel="manifest" href="https://static.arxiv.org/static/base/0.16.9/images/icons/site.webmanifest">
+<link rel="mask-icon" href="https://static.arxiv.org/static/base/0.16.9/images/icons/safari-pinned-tab.svg" color="#b31b1b">
+<link rel="shortcut icon" href="https://static.arxiv.org/static/base/0.16.9/images/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#b31b1b">
+<meta name="msapplication-config" content="images/icons/browserconfig.xml">
+<meta name="theme-color" content="#b31b1b">
+<!-- end favicon config -->
+<title>Submit tex - My Docs | arXiv e-print repository</title>
+<script defer src="https://static.arxiv.org/static/base/0.16.9/fontawesome-free-5.11.2-web/js/all.js"></script>
+<link rel="stylesheet" href="https://static.arxiv.org/static/base/0.16.9/css/arxivstyle.css" />
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    messageStyle: "none",
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true,
+      ignoreClass: '.*',
+      processClass: 'mathjax.*'
+    },
+    TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js"],
+        noErrors: {
+          inlineDelimiters: ["$","$"],
+          multiLine: false,
+          style: {
+            "font-size": "normal",
+            "border": ""
+          }
+        }
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script src='//static.arxiv.org/MathJax-2.7.3/MathJax.js'></script>
+<script src="https://static.arxiv.org/static/base/0.16.9/js/notification.js"></script>
+
+    
+  
+    
+
+    
+  <script>var base_url = '..';</script>
+
+  
+
+    
+
+  </head>
+  <body>
+  
+  
+  <header><a href="#main-container" class="is-sr-only">Skip to main content</a>
+    
+    <!-- contains Cornell logo and sponsor statement -->
+<div class="attribution level is-marginless" role="banner">
+  <div class="level-left">
+    <a class="level-item" href="https://cornell.edu/"><img src="https://static.arxiv.org/static/base/0.16.9/images/cornell-reduced-white-SMALL.svg" alt="Cornell University" width="200" aria-label="logo" /></a>
+  </div>
+  <div class="level-right is-marginless"><p class="sponsors level-item is-marginless"><a href="https://confluence.cornell.edu/x/ALlRF">We gratefully acknowledge support from<br /> the Simons Foundation and member institutions.</a></p></div>
+</div>
+<!-- contains arXiv identity and search bar -->
+<div class="identity level is-marginless">
+  <div class="level-left">
+    <div class="level-item">
+      <a class="arxiv" href="https://arxiv.org/" aria-label="arxiv-logo"><img src="https://static.arxiv.org/static/base/0.16.9/images/arxiv-logo-web.svg" alt="arXiv" aria-label="logo" width="85" /></a>
+    </div>
+  </div>
+  
+  <div class="search-block level-right">
+    <form class="level-item mini-search" method="GET" action="https://arxiv.org/search">
+      <div class="field has-addons">
+        <div class="control">
+          <input class="input is-small" type="text" name="query" placeholder="Search..." aria-label="Search term or terms" />
+          <p class="help"><a href="https://arxiv.org/help">Help</a> | <a href="https://arxiv.org/search/advanced">Advanced Search</a></p>
+        </div>
+        <div class="control">
+          <div class="select is-small">
+            <select name="searchtype" aria-label="Field to search">
+              <option value="all" selected="selected">All fields</option>
+              <option value="title">Title</option>
+              <option value="author">Author</option>
+              <option value="abstract">Abstract</option>
+              <option value="comments">Comments</option>
+              <option value="journal_ref">Journal reference</option>
+              <option value="acm_class">ACM classification</option>
+              <option value="msc_class">MSC classification</option>
+              <option value="report_num">Report number</option>
+              <option value="paper_id">arXiv identifier</option>
+              <option value="doi">DOI</option>
+              <option value="orcid">ORCID</option>
+              <option value="author_id">arXiv author ID</option>
+              <option value="help">Help pages</option>
+              <option value="full_text">Full text</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="source" value="header">
+        <button class="button is-small is-cul-darker">Search</button>
+      </div>
+    </form>
+  </div>
+</div> <!-- closes identity -->
+
+<div class="container">
+    <div class="user-tools is-size-7 has-text-right has-text-weight-bold" role="navigation" aria-label="User menu">
+      <a href="https://arxiv.org/login">Login</a>
+    </div>
+</div>
+    
+  </header>
+  <main class="container" id="main-container">
+    
+
+
+    
+
+<h1 id="considerations-for-tex-submissions">Considerations for TeX Submissions</h1>
+<ul>
+<li><a href="#autoproc">Submissions are automatically processed</a></li>
+<li><a href="#latex">Considerations for (La)TeX submissions</a></li>
+<li><a href="#pdflatex">Considerations for PDFLaTeX submissions</a></li>
+<li><a href="#wegotem">We probably have your style files or macros</a></li>
+<li><a href="#double">Do not submit in double-spaced "referee" mode</a></li>
+<li><a href="#refs">Prepare the references carefully</a></li>
+<li><a href="#bibtex">Include <code>.bbl</code> files if you use BibTeX</a></li>
+<li><a href="#makeindex">Include <code>.ind</code> files if you used <code>makeindex</code></a></li>
+<li><a href="#glossary">Include <code>.gls</code> files if you have a glossary</a></li>
+<li><a href="#autoignore">Supplemental material</a></li>
+<li><a href="#mistakes">Avoid mistakes in the text</a></li>
+<li><a href="#jhep3">Problems with special TeX characters in hyperlinks (URLs) -- in particular JHEP3.cls</a></li>
+<li><a href="#hidden">Hidden files will be deleted upon announcement</a></li>
+</ul>
+<hr />
+<p><span id="autoproc"></span></p>
+<h3 id="submissions-are-automatically-processed">Submissions are automatically processed</h3>
+<p>Your (La)TeX, AMS(La)TeX, or PDFLaTeX submission will be processed automatically by our AutoTeX software.</p>
+<p>This is a complex task, and the processing does not always lead to the desired or expected results. It is important for you, the author/submitter, to carefully check and verify the resulting PDF. You will be required to view the PDF during the submission process before you will be able to complete your submission.</p>
+<p>You can submit a collection of TeX input/include files, e.g. separate chapters, foreword, appendix, etc, and custom macros (<a href="#wegotem">see below</a>) packaged in a (possibly compressed) <code>.tar</code> or <code>.zip</code> file. AutoTeX will generally figure out how to properly process multi-part submissions, and you don't need to adhere to special packaging rules or naming conventions for your tex files. However, there are certain caveats. Naming your primary (or toplevel) file <code>ms.tex</code> will cause AutoTeX to always process that file first. Otherwise, tex files will be processed in <em>alphanumeric order.</em></p>
+<p>That said, it is important that you do not include extraneous files (including unused figure files), leftover files, backup files, anything which does not belong to the paper you are submitting or is not needed for processing. Do not include journal templates, referee letters, or man pages. Tidy your submission before you pack it up.</p>
+<p>You must submit any figures that go along with your paper. We recommend that you use appropriate TeX commands to include the figures inline with your paper (see below), as this is more readable than separate or appended figures.</p>
+<p><em>Note:</em> In the past, it was possible to include a generic arXiv identifier in the TeX source that the processor would automatically translate into the identifier of the current submission. This practice is no longer necessary, nor supported. All TeX-type submissions receive the arXiv watermark, including the canonical identifier, version number, primary classification, and a link back to the correct version on the arXiv site. Again, <code>arch-ive/yymmnnn</code> (and, by extension, <code>yymm.nnnnn</code>) will <em>not</em> be translated to the correct identifier for your submission.</p>
+<p><span id="latex"></span></p>
+<h3 id="considerations-for-latex-submissions">Considerations for (La)TeX submissions</h3>
+<p>By default, LaTeX files are processed using LaTeX2e (the current version of LaTeX). Although there is a LaTeX2.09 compatibility mode, it is highly recommended that you use LaTeX2e whenever possible, to take advantage of all its features and improvements and to avoid complications which may arise in compatibility mode (note that LaTeX2e has been the default latex version for many years).</p>
+<p>If you have a file named foo.tex, then do not include any associated auxiliary file or intermediate or resulting output file, e.g. foo.ps (or foo.aux, foo.log, foo.toc, foo.lot, foo.lof, foo.dvi, foo.pdf) in your submission. These will be automatically removed to allow the creation of an output file from your TeX file. Index (<code>.ind</code>) and processed bibtex (<code>.bbl</code>) files are an exception, <a href="#bibtex">see below</a>.</p>
+<h4 id="figure-inclusion-in-latex-submissions">Figure inclusion in LaTeX submissions</h4>
+<p>Note that TeX/LaTeX can only include (encapsulated) PostScript (<strong>.ps</strong> or <strong>.eps</strong>), figures directly. Other formats are not supported in native (La)TeX. See <a href="bitmap/software">Useful Software</a> for figure conversion tools. If you are making use of <a href="#pdftex">PDFLaTeX</a> you may embed your <code>.pdf, .png, .jpg</code> figures using the same mechanisms.</p>
+<p>The most flexible and robust figure inclusion is provided by the <code>graphics</code> and <code>graphicx</code> packages and the <code>\includegraphics</code> command defined therein. We highly recommend you use them for your figure inclusion. arXiv does not provide the <code>psfig</code> package any longer. You must include your own <code>psfig.sty</code> if you use it. In general, if things go wrong or don't look as desired you may have to include your version of <a href="faq/mistakes#old_style">older macros</a>.</p>
+<p>Note that some software will permit you to include a mix of PostScript and PDFLaTeX-compatible figures and will perform the conversions to the appropriate format for you on the fly. arXiv does not permit such software to run during the AutoTeX processing. Why? It is possible for conversion issues to arise that can alter the scientific meaning or interpretation of your figure. Rather than invite such possibilities, we require that you use a unified figure format.</p>
+<h4 id="separate-figures-with-latex-submissions">Separate figures with LaTeX submissions</h4>
+<p>Figures in <strong>jpeg</strong>, <strong>png</strong>, or <strong>gif</strong> format may be submitted alongside native (La)TeX submissions provided that they are <strong>not</strong> included in the source file.. PDF or other formats not listed above are not permitted with (La)TeX submission; use <a href="#pdflatex">PDFLaTeX</a> instead for PDF, jpeg, or png figures.</p>
+<p>Figures which are not incorporated in the main body of the paper will be listed separately. They should be given names of the form <code>figure&lt;number&gt;&lt;optional letter&gt;.ext</code>, e.g. <code>figure1.jpg</code>, <code>figure2a.gif</code>, <code>figure2b.png</code>, so that they can be automatically sorted into the correct order for the "combined figures" link.</p>
+<h4 id="figure-inclusion-in-plain-tex">Figure inclusion in plain TeX</h4>
+<p>For plain TeX submissions, use the plain tex interface to the graphics package (<code>graphicx.tex</code>) or a macro package like <code>epsf</code> or <code>epsfig</code>.</p>
+<p>arXiv does not presently support PDFTeX.</p>
+<p><span id="pdflatex"></span></p>
+<h3 id="considerations-for-pdflatex-submissions">Considerations for PDFLaTeX submissions</h3>
+<p>arXiv fully supports and automatically recognizes PDFLaTeX. You can ensure pdflatex processing by setting the flag <strong>\pdfoutput=1</strong> within the first 5 lines of the preamble of the main <code>.tex</code> file. You should not need any other special flag.</p>
+<ul>
+<li>Should you need conditional branching in your source, use the <a href="ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/oberdiek/ifpdf.pdf">ifpdf</a> package. Do not re-invent the wheel. <a href="ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/oberdiek/ifpdf.pdf">ifpdf</a> provides a robust and well tested mechanism to distinguish between pdflatex in pdf mode and other modes or engines.</li>
+<li>Some packages may require a particular back-end driver, in the form of a package option, e.g. <code>\usepackage[pdftex]{...}</code>. However, the graphics and hyperref packages determine the proper driver automatically; you don't have to make this explicit choice and should not do so to avoid conflicts.</li>
+<li>You can use the full range of pdf specific <a href="ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/hyperref/doc/manual.pdf">hypertex</a> <a href="ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/hyperref/doc/options.pdf">options</a> to augment metadata in the PDF file, e.g. <code>\hypersetup{pdfauthor={some author},pdftitle={eye-catching title}}</code>.</li>
+<li>Figures can be included in <strong>JPEG</strong>, <strong>PNG</strong>, or <strong>PDF</strong> format with the standard graphics package. For security reasons arXiv does not allow for automated format conversion, so your figures must be in the proper format already.</li>
+<li>Unlike native LaTeX, the default output format for PDFLaTeX is PDF, with no intermediate DVI or PostScript. Thus, these formats are <em>not</em> available for download for PDFLaTeX submissions.</li>
+</ul>
+<p><span id="wegotem"></span></p>
+<h3 id="we-probably-have-your-style-files-or-macros">We probably have your style files or macros</h3>
+<p>You probably do not need to submit any style files since we have copies of all the common scientific style files. Try submitting without style files. If you find that this does not work because we do not have the style file you need, then you can include the necessary style file in your submission and resubmit.</p>
+<p><em>Note:</em> A&amp;A, pstricks, elsart, and by now to a lesser degree <a href="faq/amslatex2000">AMSLaTeX</a>, iopart, and revtex4 users, you may need to include your own version of those style/class files with your submission. arXiv can process standard <code>zip</code> and <code>tar</code> files. Simply bundle the necessary files together with your (La-)TeX file(s) in the same directory (or do a less convenient multi-file submission).</p>
+<p>Do not ask us to update those particular style and class files in our installation. They are not backwards compatible.</p>
+<p><span id="double"></span></p>
+<h3 id="do-not-submit-in-double-spaced-referee-mode">Do not submit in double-spaced "referee" mode</h3>
+<p>Avoid inadvertently submitting your paper in double-spaced referee mode, since it wastes paper on a global scale. Readers prefer to have a compact single-spaced version, as it would appear in a printed journal.</p>
+<p><span id="refs"></span></p>
+<h3 id="prepare-the-references-carefully">Prepare the references carefully</h3>
+<p>We strongly encourage you to include arXiv's <code>YYMM.NNNNN</code>, <a href="arxiv_identifier">identifiers</a> in your reference list for both published and unpublished papers. Note also that many publishers allow e-print identifiers to appear in the references of papers submitted.</p>
+<p>If you use standard identifiers of the form 1510.00322, arXiv:1510.00322, 0901.0512, arXiv:0901.0512, hep-ph/9409201 or arXiv:hep-ph/9409201, they can be easily harvested by automatic software. For example,</p>
+<blockquote>
+<p><code>\bedim{upsilon}
+C.T.H. Davies {\em et al.}, Phys. Rev {\bf D} 50 (1994) 6963, hep-lat/9406017.</code></p>
+</blockquote>
+<p>Do not include extraneous font commands, spaces, tildes, braces or line-breaks within the e-print identifier: this will cause your references to be missed by automated extraction software. See also notes about <a href="faq/references">references to and in arXiv documents</a> and <a href="http://inspirehep.net/">collection of references at INSPIRE</a>. Use of e-print identifiers is a significant aid to the INSPIRE database. It also facilitates automatic network hyperlinks of references from within papers.</p>
+<p>If you use BibTeX there are some BibTeX styles which support e-print identifiers (see <a href="hypertex/bibstyles">BibTeX and Eprints</a>).</p>
+<p>If you are submitting a group of <code>.tex</code> files, automated reference extraction by INSPIRE and others will be more accurate and faster if your references are all in one file. This file should have the <code>\begin{thebibliography}</code> or similar command within it, and should be called <code>foo.bbl</code> to correspond to a given <code>foo.tex</code> source file.</p>
+<p><span id="bibtex"></span></p>
+<h3 id="include-bbl-files-if-you-use-bibtex">Include <code>.bbl</code> files if you use BibTeX</h3>
+<p>We do not run BibTeX in the auto-TeXing procedure. If you use it, include in your submission the <code>.bbl</code> file that BibTeX produces on your own machine; otherwise your references will not come out correctly. We do not run BibTeX because the <code>.bib</code> database files can be quite large, and the only thing necessary to resolve the references for a given paper is the <code>.bbl</code> file. You may still include them if you wish, but they must also match your .tex file name.</p>
+<p>The name of the <code>.bbl</code> file <em>must</em> match the name of the main <code>.tex</code> file for the system to process the references correctly.</p>
+<p>Note that packages such as <code>xr</code> and <code>xref</code> that rely on the <code>\externaldocument</code> command will not work in arXiv. They require the presence of a <code>.aux</code> file in order to set up their linking structure. Since our AutoTeX system deletes the <code>.aux</code> files between tex runs, packages that need these files to be present will not function correctly, and will not report any critical error during processing. Instead we require that you update your <code>.bbl</code> files to include the appropriate references for both documents.</p>
+<p><span id="makeindex"></span></p>
+<h3 id="include-ind-files-if-you-use-makeindex">Include <code>.ind</code> files if you use <code>makeindex</code></h3>
+<p>We do not run <code>makeindex</code> in the auto-TeXing procedure. If you use it, include in your submission the <code>.ind</code> file that <code>makeindex</code> produces on your own machine; otherwise your index will not appear.</p>
+<p>It is difficult to automatically perform <code>makeindex</code> processing to the authors' expectations because of the multiple optional arguments and optional style selections. Therefore arXiv asks authors to provide their pre-processed <code>.ind</code> file(s) along with their (La)TeX source file(s).</p>
+<p><span id="glossary"></span></p>
+<h3 id="include-your-gls-if-you-use-a-glossary">Include your .gls if you use a glossary</h3>
+<p>Similar to <a href="#makeindex">index</a> files, we do not process <code>.glo</code> into the resultant <code>.gls</code> files. You must provide these files if you have any special nomenclature in your document.</p>
+<p><span id="autoignore"></span></p>
+<h3 id="how-to-include-supplemental-material">How to include supplemental material</h3>
+<p>TeX-based supplemental material should be included in the main document root directory, and will be compiled into the final output pdf. Both files must use the same TeX-engine (either both latex, both pdflatex, or both plain tex). The final output will be assembled in alphanumeric order. For example, given the following files:</p>
+<pre><code>  ./ms.tex
+  ./ms.bbl
+  ./myfig.eps
+  ./supplement.tex
+  ./supplement.bbl
+</code></pre>
+<p>contained within your .zip or .tar.gz file the final pdf would place the contents of your <code>ms.tex</code> file first. We recommend assembling your files in this manner rather than placing any compiled pdf into an <a href="ancillary_files">ancillary files</a> directory, as these are not indexed for discovery and access. Note that adding a <a href="00README#toplevel"><code>00README.XXX</code></a> with a <code>toplevelfile</code> directive will only effect the processing order and not the final assembly order of the pdf.</p>
+<p>We highly recommend that if you plan to include any non-TeX files with your source package that you include them as <a href="ancillary_files">ancillary files</a> inside their own <code>/anc</code> directory off your document's root directory. For additional information please see that <a href="ancillary_files">help page</a>. For legacy reasons, we still support individual file inclusion, as follows.</p>
+<p>If your submission includes any plain text files which should not be processed (e.g. Fortran source code, data files), and you don't want them available for separate download as <a href="ancillary_files">ancillary files</a> then make the first line of those files</p>
+<blockquote>
+<p><code>%auto-ignore</code></p>
+</blockquote>
+<p>This ensures that they will be ignored by the auto-postscript generator.</p>
+<p><strong>NOTE</strong>: <code>pdflatex</code> users who submit using the above formatting recommendations will have any final hyperlinking removed due to a <a href="http://mirrors.ctan.org/macros/latex/contrib/pdfpages/pdfpages.pdf#page=2">known issue</a> in the <code>pdfpages.sty</code> package. </p>
+<p><span id="mistakes"></span></p>
+<h3 id="avoid-mistakes-in-the-text">Avoid mistakes in the text</h3>
+<p>Common mistakes can be avoided by following some simple <a href="faq/mistakes">guidelines</a>. If your submission does not TeX properly, you will receive the log from our auto-TeXing script at the <em>Process</em> step. The information contained in this complete log should be sufficient to identify the problem, so examine it carefully; check the end of the log for TeX errors.</p>
+<p><span id="jhep3"></span></p>
+<h3 id="problems-with-special-tex-characters-in-hyperlinks-urls-in-particular-jhep3cls">Problems with special TeX characters in hyperlinks (URLs) -- in particular JHEP3.cls</h3>
+<p>If hyperlinks for URLs containing '#' appear as '\#' in arXiv generated PDF, the macro package being used to generate these hyperlinks does not properly escape special characters in pdf strings. Either use the <a href="../hypertex">hyperref package</a> or define the URLs with the following workaround:
+instead of <em>e.g.</em>:</p>
+<blockquote>
+<p><code>\href{http://example.com/some-page.html\#destination}{destination}</code></p>
+</blockquote>
+<p>use:</p>
+<blockquote>
+<p><code>\href{http://example.com/some-page.html\string#destination}{destination}</code></p>
+</blockquote>
+<p>If you use macros like:</p>
+<blockquote>
+<p><code>\newcommand{\link}[2]{\href{http://example.com/some-page.html\##1}\egroup \newcommand{\link}[2]{\href{http://example.com/some-page.html\hash #1}{ #2}</code></p>
+</blockquote>
+<p>instead.</p>
+<p><span id="hidden"></span></p>
+<h3 id="hidden-files-will-be-deleted-upon-announcement">Hidden files will be deleted upon announcement</h3>
+<p>Please do not use hidden files or directories in your source package. These hidden files (i.e. files or directories beginning with a period character, such as <code>.cache/</code>) will be deleted upon announcement, but <em>may</em> work at the <em>Process</em> or <em>Preview</em> submission stages. The rationale being that such files may cruft from version control systems, etc. and should not be a part of an archival version of your source. This means that any packages that allow for or rely upon these structures (e.g. <code>minted.sty</code>) may function on your machine, but will fail once announced. </p>
+
+<aside class="has-text-centered" style="padding-top: 3rem;">
+  <p class="is-size-7">
+    Last modified <a href="https://github.com/arXiv/arxiv-docs/blob/master/mkdocs/docs/help/submit_tex.md">2022-09-07</a>.
+  </p>
+</aside>
+
+
+
+  </main>
+  <footer>
+    
+    <div class="columns is-desktop" role="navigation" aria-label="Secondary">
+  <!-- MetaColumn 1 -->
+  <div class="column">
+    <div class="columns">
+      <div class="column">
+        <ul class="nav-spaced">
+          <li><a href="https://arxiv.org/about">About</a></li>
+          <li><a href="https://arxiv.org/help">Help</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul class="nav-spaced">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon filter-black" role="presentation"><title>contact arXiv</title><desc>Click here to contact arXiv</desc><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+            <a href="https://arxiv.org/help/contact"> Contact</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon filter-black" role="presentation"><title>subscribe to arXiv mailings</title><desc>Click here to subscribe</desc><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg>
+            <a href="https://arxiv.org/help/subscribe"> Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> <!-- end MetaColumn 1 -->
+  <!-- MetaColumn 2 -->
+  <div class="column">
+    <div class="columns">
+      <div class="column">
+        <ul class="nav-spaced">
+          <li><a href="https://arxiv.org/help/license">Copyright</a></li>
+          <li><a href="https://arxiv.org/help/policies/privacy_policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="column sorry-app-links">
+        <ul class="nav-spaced">
+          <li><a href="https://arxiv.org/help/web_accessibility">Web Accessibility Assistance</a></li>
+          <li>
+            <p class="help">
+              <a class="a11y-main-link" href="https://status.arxiv.org" target="_blank">arXiv Operational Status <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="icon filter-dark_grey" role="presentation"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a><br>
+              Get status notifications via
+              <a class="is-link" href="https://subscribe.sorryapp.com/24846f03/email/new" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon filter-black" role="presentation"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>email</a>
+              or <a class="is-link" href="https://subscribe.sorryapp.com/24846f03/slack/new" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon filter-black" role="presentation"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>slack</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> <!-- end MetaColumn 2 -->
+</div>
+    
+  </footer>
+  </body>
+</html>
