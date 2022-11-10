@@ -13,7 +13,7 @@ theme:
   logo: assets/arxiv-logomark-small.svg
   custom_dir: overrides
 extra_css:
-  - stylesheets/extra.css
+  - styles/arxiv-custom.css
 
 repo_name: GitHub
 repo_url: https://github.com/arXiv/arxiv-docs
