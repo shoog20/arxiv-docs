@@ -1,4 +1,4 @@
-# Our Members: 2022
+# Our Members: 2023
 
 We gratefully acknowledge the support of the following members, which contribute expertise and funding that complements support from [foundations, affiliates, and sponsors](supporters.md).
 {.intro}
@@ -214,7 +214,6 @@ Interested in supporting arXiv and expanding the possibilities of open science? 
 1. Ames Laboratory (USA)
 1. Boston College (USA)
 1. Cape Breton University (Canada) _CRKN_
-1. Central European University (Austria)
 1. Chennai Mathematical Institute (India)
 1. Concordia University (Canada)
 1. Charles Sturt University (Australia) _CAUL_
