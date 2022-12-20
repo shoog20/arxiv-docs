@@ -6,10 +6,8 @@ arXiv's Scientific Advisory Board is composed of scientists and researchers in d
 
 <div class="grid-blocks" markdown="1">
 <div class="block" markdown="1">
-
 ### Sara Del Valle
 Deputy Group Leader, Los Alamos National Laboratory
-
 </div>
 <div class="block" markdown="1">
 ### Mark Doyle
