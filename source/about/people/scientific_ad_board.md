@@ -21,11 +21,6 @@ Professor of Physics & Computing and Information
 Science, Cornell University
 </div>
 <div class="block" markdown="1">
-### Daniel Gottesman
-Faculty Member, Perimeter Institute for
-Theoretical Physics
-</div>
-<div class="block" markdown="1">
 ### Joe Halpern
 Professor of Computer Science, Cornell University (ex
 officio, as chair of Computer Science Advisory Committee)
@@ -91,6 +86,7 @@ The current Board, and Cornell University, would like to express
 appreciation to the following former members of the Scientific Advisory
 Board, for their contributions to arXiv's governance and success.
 
+Daniel Gottesman, Faculty Member, Perimeter Institute for Theoretical Physics
 Eitan Bachmat, Professor, Department of Computer Science, Ben-Gurion University \| Consultant for Theoretical Computer Science, Simons Foundation
 David Morrison, University of California, Santa Barbara
 Robert Seiringer, Institute of Science and Technology Austria
